@@ -1,10 +1,13 @@
+
 <div class="container">
     <div class="jumbotron">
         <div class="row">
             <div class="col-sm-10 col-md-10 col-lg-10">
                 <app-shoping-edit></app-shoping-edit>
                 <hr>
-                This list.
+                <ul class="list-group">
+                    <a href="#" class="list-group-item" *ngFor = "let i of ingredients">{{i.name }}</a>
+                </ul>
             </div>
         </div>
     </div>
